@@ -15,10 +15,12 @@ $sheep->isColdblood();
 $buduk->introduce();
 $buduk->haveLegs();
 $buduk->isColdblood();
+$buduk->jump();
 
 $kerasakti->introduce();
 $kerasakti->haveLegs();
 $kerasakti->isColdblood();
+$kerasakti->yell();
 
 
 ?>
