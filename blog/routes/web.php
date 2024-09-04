@@ -21,3 +21,15 @@ Route::get('/', function () {
 Route::get('/home', [homeController::class, 'dashboard']);
 Route::get('/register', [authController::class, 'register']);
 Route::post('/dashboard', [homeController::class, 'home']);
+
+Route::get('/master', function(){
+    return view('layouts.blank');
+});
+
+Route::get('/table' , function(){
+    return view ('page.table');
+});
+
+Route::get('/data-table', function() {
+    return view('page.data-table');
+});
