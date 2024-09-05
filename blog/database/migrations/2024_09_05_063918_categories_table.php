@@ -11,11 +11,9 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('users', function (Blueprint $table) {
-            $table->id();
-            $table->string('name', 255)->notNull();
-            $table->string('email', 255)->unique();
-            $table->string('password'); // Assuming password hashing will be implemented
+        Schema::create('categories', function (Blueprint $table) {
+            $table->id(); 
+            $table->string('name',255)->notNull();
             $table->timestamps();
         });
     }
@@ -25,6 +23,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('users');
+        Schema::dropIfExists('categories');
     }
 };
